@@ -1,10 +1,10 @@
-public class book {
+public class Book {
     private String title;
     private String author;
     private String isbn;
     private boolean isBorrowed;
 
-    public book(String title, String author, String isbn){
+    public Book(String title, String author, String isbn){
         this.title = title;
         this.author = author;
         this.isbn = isbn ; 
@@ -33,7 +33,7 @@ public class book {
     }
 
     public void displayInfo(){
-        System.out.println(title + "by " + author + " (ISBN: "+ isbn + ") - " + (isBorrowed ? "Borrowed" : "Available") );
+        System.out.println(title + " by " + author + " (ISBN: "+ isbn + ") - " + (isBorrowed ? "Borrowed" : "Available") );
     }
 
 }
